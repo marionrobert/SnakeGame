@@ -13,6 +13,8 @@ screen.tracer(0)
 # create the snake
 snake = Snake()
 screen.update()
+
+# controle snake with a keypress
 screen.listen()
 screen.onkey(fun=snake.go_up, key="Up")
 screen.onkey(fun=snake.go_down, key="Down")
