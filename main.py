@@ -1,6 +1,7 @@
-from turtle import Screen, Turtle
+from turtle import Screen
 import time
 from snake import Snake
+from food import Food
 
 # set tup the screen
 screen = Screen()
@@ -10,8 +11,9 @@ screen.title("Snake Game")
 # Turn turtle animation on/off and set delay for update drawings.
 screen.tracer(0)
 
-# create the snake
+# create the snake and the food
 snake = Snake()
+food = Food()
 screen.update()
 
 # controle snake with a keypress
