@@ -2,19 +2,22 @@ from turtle import Screen
 import time
 from snake import Snake
 from food import Food
-import random
+from scoreboard import Scoreboard
 
 # set tup the screen
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
 screen.title("Snake Game")
+
+
 # Turn turtle animation on/off and set delay for update drawings.
 screen.tracer(0)
 
-# create the snake and the food
+# create the snake, food and scoreboard
 snake = Snake()
 food = Food()
+scoreboard = Scoreboard()
 screen.update()
 
 # controle snake with a keypress
@@ -34,6 +37,7 @@ while game_on:
     if snake.head.distance(food) < 15:
         print("you've got food")
         food.refresh()
+        scoreboard.update_score()
 
 
 screen.exitonclick()
