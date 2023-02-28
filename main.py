@@ -44,14 +44,14 @@ while game_on:
             or snake.head.xcor() < -288 \
             or snake.head.ycor() > 288 \
             or snake.head.ycor() < -288:
-        game_on = False
-        scoreboard.game_over()
+        scoreboard.reset()
+        snake.reset()
 
     # detect collision with own tail
     for segment in snake.segments[1:]:
         if snake.head.distance(segment) < 5:
-            game_on = False
-            scoreboard.game_over()
+            scoreboard.reset()
+            snake.reset()
 
 
 
