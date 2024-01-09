@@ -1,6 +1,6 @@
 # Snake Game
 
-Ce projet consiste en un jeu Snake développé en Python utilisant le module Turtle pour la création de l'interface graphique.
+Ce projet consiste en un jeu Snake développé en Python utilisant le module Turtle et la programmation orientée objet.
 
 ## Présentation du jeu
 
@@ -27,7 +27,7 @@ Les contrôles du serpent sont les suivants :
 
 Le jeu continue tant que le serpent ne se heurte pas aux murs ou à lui-même.
 
-### Apperçu de l'interface
+![Game Screenshot](/assets/playground.png)
 
 (Insérez une capture d'écran de l'interface du jeu ici)
 
