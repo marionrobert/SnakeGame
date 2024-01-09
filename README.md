@@ -14,11 +14,13 @@ Le jeu Snake est un jeu classique où un serpent se déplace sur l'écran pour m
 - `snake.py`: Ce fichier définit la classe Snake qui gère le serpent, sa taille, ses déplacements et ses contrôles.
 - `scoreboard.py`: Ce fichier contient la classe Scoreboard qui gère l'affichage du score et du meilleur score, ainsi que la sauvegarde du meilleur score dans un fichier externe.
 - `food.py`: Le fichier contient la classe Food qui représente la nourriture que le serpent doit manger pour grandir.
-- `data.txt`: Ce fichier contient le meilleur score obtenu par le joueur. Il est mis à jour à chaque nouveau meilleur score obtenu.
+- `data.txt`: Ce fichier contient le meilleur score obtenu par le joueur. Il est mis à jour à chaque nouveau meilleur score obtenu quand la partie est terminée.
 
 ## Comment jouer ?
 
 Exécutez le fichier `main.py` pour démarrer le jeu.
+
+Le but du jeu est de manger la nourriture (représentée par un point coloré). Lorsque vous mangez la nourriture, vous marquez un point et la nourriture est reprositionnée sur l'aire de jeux de manière aléatoire.
 Les contrôles du serpent sont les suivants :
 - Haut : Flèche vers le haut
 - Bas : Flèche vers le bas
